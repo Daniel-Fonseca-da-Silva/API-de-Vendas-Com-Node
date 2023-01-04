@@ -3,6 +3,7 @@ import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import routes from './routes';
 import AppError from '@shared/errors/AppError';
+import '@shared/typeorm'; // Chama o index.ts do typeorm pasta
 
 const app = express();
 
