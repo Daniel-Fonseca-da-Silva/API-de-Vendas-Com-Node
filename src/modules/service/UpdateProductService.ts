@@ -25,7 +25,7 @@ export class UpdateProductService {
       throw new AppError('Product not found.');
     }
 
-    if (productExists) {
+    if (productExists && name != product.name) {
       throw new AppError('There is already product with this name');
     }
 
